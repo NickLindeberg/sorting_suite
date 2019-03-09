@@ -1,10 +1,11 @@
-const assert = require('chai').assert
-const sort = require('../sort')
+const expect = require('chai').expect
+const flip = require('../sort')
 
 describe("sort functionality", function() {
   context("sort function", function(){
     it('can sort an array', function(){
-      assertgi.equal(sort([2,1]).toString, ([1,2]).toString)
+      var array = flip([2,1])
+      expect(array).to.deep.equal([1,2])
     })
   })
 })
